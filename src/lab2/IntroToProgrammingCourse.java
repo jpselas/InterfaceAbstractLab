@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse implements Course{
+public class IntroToProgrammingCourse implements ComputerCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -35,7 +35,7 @@ public class IntroToProgrammingCourse implements Course{
         return credits;
     }
     @Override
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");

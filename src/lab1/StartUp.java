@@ -26,7 +26,7 @@ public class StartUp {
         
         IntroJavaCourse second = new IntroJavaCourse("Java 101","I455",3,"Programming for Dummies");
         
-        Course third = new IntroToProgrammingCourse("Programming for Dummies","PD567",5);
+        ComputerCourse third = new IntroToProgrammingCourse("Programming for Dummies","PD567",5);
         
         System.out.println("Here is your course list for the semester");
         System.out.println("CLass 1: " + first.getCourseName() + " and it is course number: " + first.getCourseNumber() + " it has "+first.getPrerequisites()+" as a prerequisite"+ " and is worth " +first.getCredits()+ " credits" );

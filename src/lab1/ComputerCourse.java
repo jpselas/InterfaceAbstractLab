@@ -9,12 +9,12 @@ package lab1;
  *
  * @author johnny
  */
-public abstract class Course {
+public abstract class ComputerCourse {
     private double credits;
     private String courseName;
     private String courseNumber;
 
-    public Course(String courseName, String courseNumber,double credits) {
+    public ComputerCourse(String courseName, String courseNumber,double credits) {
         this.credits = credits;
         this.courseName = courseName;
         this.courseNumber = courseNumber;

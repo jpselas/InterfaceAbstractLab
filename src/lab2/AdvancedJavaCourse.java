@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class AdvancedJavaCourse implements Course{
+public class AdvancedJavaCourse implements ComputerCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -36,7 +36,7 @@ public class AdvancedJavaCourse implements Course{
         return credits;
     }
     @Override
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
@@ -48,8 +48,8 @@ public class AdvancedJavaCourse implements Course{
     public String getPrerequisites() {
         return prerequisites;
     }
-
-    public void setPrerequisites(String prerequisites) {
+   
+    public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");

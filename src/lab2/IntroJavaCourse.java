@@ -6,7 +6,7 @@ package lab2;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroJavaCourse implements Course{
+public class IntroJavaCourse implements ComputerCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -21,7 +21,7 @@ public class IntroJavaCourse implements Course{
         return courseNumber;
     }
     @Override
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
     @Override
@@ -29,7 +29,7 @@ public class IntroJavaCourse implements Course{
         return credits;
     }
     @Override
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         this.credits = credits;
     }
     
@@ -37,7 +37,7 @@ public class IntroJavaCourse implements Course{
         return prerequisites;
     }
     
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
     @Override
@@ -45,7 +45,7 @@ public class IntroJavaCourse implements Course{
         return courseName;
     }
     @Override
-    public void setCourseName(String courseName) {
+    public final void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
