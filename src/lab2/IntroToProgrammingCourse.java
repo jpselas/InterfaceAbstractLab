@@ -14,8 +14,8 @@ public class IntroToProgrammingCourse implements Course{
     private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
     }
     @Override
     public String getCourseNumber() {
