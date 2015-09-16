@@ -13,6 +13,12 @@ public abstract class Course {
     private double credits;
     private String courseName;
     private String courseNumber;
+
+    public Course(String courseName, String courseNumber,double credits) {
+        this.credits = credits;
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+    }
     
     
     public abstract void setCourseNumber(String courseNumber);
