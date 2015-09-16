@@ -13,9 +13,14 @@ public class StartUp {
     
     public static void main(String[] args) {
         
+        // I like this structure because you are allowed to use both abstract and concrete methods which allows you to make fixes to existing classes whether to add inheritance
+        // I dislike how much extra work it is to get the abstract super class to work properly 
+        
+        
+        // Liskov Substitution principle
         // Advantagoeus for when you want to create an array of different objects also needed for polymorphism
         // Disadvantage if you are not using abstract class or interface and if you have other methods that are unique to the class you can't use the substitution
-        
+       
         
         AdvancedJavaCourse first = new AdvancedJavaCourse("Java: Advanced Programming","AJ234",4,"Java 101");
         
